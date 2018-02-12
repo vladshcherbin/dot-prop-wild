@@ -1,0 +1,8 @@
+{
+  "name": "dot-prop-wild",
+  "description": "Get value from object or array using dot path and wildcard",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "repository": "VladShcherbin/dot-prop-wild",
+  "license": "MIT"
+}
