@@ -2,14 +2,22 @@
   "name": "dot-prop-wild",
   "description": "Get value from object or array using dot path and wildcard",
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "VladShcherbin/dot-prop-wild",
+  "main": "dist/node/cjs/index.js",
+  "module": "dist/node/es/index.js",
+  "browser": {
+    "dist/node/cjs/index.js": "dist/browser/cjs/index.js",
+    "dist/node/es/index.js": "dist/browser/es/index.js"
+  },
   "scripts": {
     "build": "rollup -c",
     "clean": "rimraf dist",
     "example": "nodemon -x babel-node example -w example -w src",
     "lint": "eslint src tests",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "yarn lint && yarn test && yarn clean && yarn build",
+    "postpublish": "yarn clean"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
@@ -28,5 +36,27 @@
     "rollup-plugin-filesize": "^1.5.0",
     "rollup-plugin-prettier": "^0.4.0"
   },
+  "files": [
+    "dist",
+    "readme.md"
+  ],
+  "keywords": [
+    "object",
+    "obj",
+    "array",
+    "arr",
+    "dot",
+    "notation",
+    "prop",
+    "property",
+    "wild",
+    "wildcard",
+    "path",
+    "segment",
+    "nested",
+    "get",
+    "value",
+    "values"
+  ],
   "license": "MIT"
 }
