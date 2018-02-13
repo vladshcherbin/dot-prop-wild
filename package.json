@@ -7,8 +7,8 @@
   "main": "dist/node/cjs/index.js",
   "module": "dist/node/es/index.js",
   "browser": {
-    "dist/node/cjs/index.js": "dist/browser/cjs/index.js",
-    "dist/node/es/index.js": "dist/browser/es/index.js"
+    "dist/node/cjs/index.js": "./dist/browser/cjs/index.js",
+    "dist/node/es/index.js": "./dist/browser/es/index.js"
   },
   "scripts": {
     "build": "rollup -c",
