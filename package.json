@@ -1,7 +1,7 @@
 {
   "name": "dot-prop-wild",
   "description": "Get value from object or array using dot path and wildcard",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "VladShcherbin/dot-prop-wild",
   "main": "dist/node/cjs/index.js",
